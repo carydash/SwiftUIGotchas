@@ -8,9 +8,35 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isPresenting: Bool = false
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView{
+            List {
+                NavigationLink("Order and Border") {
+                    OrderAndBorder()
+                }
+                NavigationLink("View Versus State Changes") {
+                    ViewVersusStateChanges()
+                }
+                NavigationLink("Text Alignment & Fixed Size") {
+                    TextAlignmentAndFixedSize()
+                }
+                NavigationLink("AnyView Usage") {
+                    AnyViewUsage()
+                }
+                NavigationLink("Navigation Leak") {
+                    NavigationLeak()
+                }
+                NavigationLink("Observed Objects") {
+                    ObservedObjects()
+                }
+                NavigationLink("Data Passing") {
+                    DataPassing()
+                }
+            }
+            .navigationTitle("SwiftUI Gotchas")
+        }
     }
 }
 

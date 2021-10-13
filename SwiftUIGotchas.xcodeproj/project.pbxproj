@@ -14,6 +14,14 @@
 		DB32C8DD27139DCA00046CFC /* SwiftUIGotchasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB32C8DC27139DCA00046CFC /* SwiftUIGotchasTests.swift */; };
 		DB32C8E727139DCA00046CFC /* SwiftUIGotchasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB32C8E627139DCA00046CFC /* SwiftUIGotchasUITests.swift */; };
 		DB32C8E927139DCA00046CFC /* SwiftUIGotchasUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB32C8E827139DCA00046CFC /* SwiftUIGotchasUITestsLaunchTests.swift */; };
+		DB32C8F82713A12900046CFC /* NavigationLeak.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB32C8F72713A12900046CFC /* NavigationLeak.swift */; };
+		DB32C8FB2713A8AB00046CFC /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB32C8FA2713A8AB00046CFC /* LazyView.swift */; };
+		DB9061A42713B17C00760E32 /* ObservedObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9061A32713B17C00760E32 /* ObservedObjects.swift */; };
+		DB9061A62713BB9300760E32 /* DataPassing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9061A52713BB9300760E32 /* DataPassing.swift */; };
+		DB9061AA27147D3D00760E32 /* TextAlignmentAndFixedSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9061A927147D3D00760E32 /* TextAlignmentAndFixedSize.swift */; };
+		DB9061AC27148BCC00760E32 /* ViewVersusStateChanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9061AB27148BCC00760E32 /* ViewVersusStateChanges.swift */; };
+		DB9061B02714977F00760E32 /* AnyViewUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9061AF2714977F00760E32 /* AnyViewUsage.swift */; };
+		DB9061B227151B4E00760E32 /* OrderAndBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9061B127151B4E00760E32 /* OrderAndBorder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +52,14 @@
 		DB32C8E227139DCA00046CFC /* SwiftUIGotchasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIGotchasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB32C8E627139DCA00046CFC /* SwiftUIGotchasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIGotchasUITests.swift; sourceTree = "<group>"; };
 		DB32C8E827139DCA00046CFC /* SwiftUIGotchasUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIGotchasUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DB32C8F72713A12900046CFC /* NavigationLeak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLeak.swift; sourceTree = "<group>"; };
+		DB32C8FA2713A8AB00046CFC /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
+		DB9061A32713B17C00760E32 /* ObservedObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservedObjects.swift; sourceTree = "<group>"; };
+		DB9061A52713BB9300760E32 /* DataPassing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPassing.swift; sourceTree = "<group>"; };
+		DB9061A927147D3D00760E32 /* TextAlignmentAndFixedSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAlignmentAndFixedSize.swift; sourceTree = "<group>"; };
+		DB9061AB27148BCC00760E32 /* ViewVersusStateChanges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewVersusStateChanges.swift; sourceTree = "<group>"; };
+		DB9061AF2714977F00760E32 /* AnyViewUsage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyViewUsage.swift; sourceTree = "<group>"; };
+		DB9061B127151B4E00760E32 /* OrderAndBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderAndBorder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +110,10 @@
 		DB32C8CA27139DC700046CFC /* SwiftUIGotchas */ = {
 			isa = PBXGroup;
 			children = (
-				DB32C8CB27139DC700046CFC /* SwiftUIGotchasApp.swift */,
 				DB32C8CD27139DC700046CFC /* ContentView.swift */,
-				DB32C8CF27139DCA00046CFC /* Assets.xcassets */,
-				DB32C8D127139DCA00046CFC /* Preview Content */,
+				DB32C8F627139E0500046CFC /* Gotchas */,
+				DB32C8F92713A4E100046CFC /* Utils */,
+				DB32C8F527139DF100046CFC /* Support Files */,
 			);
 			path = SwiftUIGotchas;
 			sourceTree = "<group>";
@@ -125,6 +141,38 @@
 				DB32C8E827139DCA00046CFC /* SwiftUIGotchasUITestsLaunchTests.swift */,
 			);
 			path = SwiftUIGotchasUITests;
+			sourceTree = "<group>";
+		};
+		DB32C8F527139DF100046CFC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB32C8CB27139DC700046CFC /* SwiftUIGotchasApp.swift */,
+				DB32C8CF27139DCA00046CFC /* Assets.xcassets */,
+				DB32C8D127139DCA00046CFC /* Preview Content */,
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		DB32C8F627139E0500046CFC /* Gotchas */ = {
+			isa = PBXGroup;
+			children = (
+				DB9061B127151B4E00760E32 /* OrderAndBorder.swift */,
+				DB9061AB27148BCC00760E32 /* ViewVersusStateChanges.swift */,
+				DB9061A927147D3D00760E32 /* TextAlignmentAndFixedSize.swift */,
+				DB9061AF2714977F00760E32 /* AnyViewUsage.swift */,
+				DB32C8F72713A12900046CFC /* NavigationLeak.swift */,
+				DB9061A32713B17C00760E32 /* ObservedObjects.swift */,
+				DB9061A52713BB9300760E32 /* DataPassing.swift */,
+			);
+			name = Gotchas;
+			sourceTree = "<group>";
+		};
+		DB32C8F92713A4E100046CFC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DB32C8FA2713A8AB00046CFC /* LazyView.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +305,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB9061AC27148BCC00760E32 /* ViewVersusStateChanges.swift in Sources */,
+				DB32C8FB2713A8AB00046CFC /* LazyView.swift in Sources */,
 				DB32C8CE27139DC700046CFC /* ContentView.swift in Sources */,
 				DB32C8CC27139DC700046CFC /* SwiftUIGotchasApp.swift in Sources */,
+				DB9061AA27147D3D00760E32 /* TextAlignmentAndFixedSize.swift in Sources */,
+				DB9061A62713BB9300760E32 /* DataPassing.swift in Sources */,
+				DB32C8F82713A12900046CFC /* NavigationLeak.swift in Sources */,
+				DB9061A42713B17C00760E32 /* ObservedObjects.swift in Sources */,
+				DB9061B02714977F00760E32 /* AnyViewUsage.swift in Sources */,
+				DB9061B227151B4E00760E32 /* OrderAndBorder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
